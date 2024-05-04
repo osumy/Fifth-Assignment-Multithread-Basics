@@ -9,7 +9,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MatrixMultiplicationTest {
+public class
+MatrixMultiplicationTest {
     static List<List<Integer>> matrix_A;
     static List<List<Integer>> matrix_B;
     static List<List<Integer>> matrix_C;
@@ -40,7 +41,7 @@ public class MatrixMultiplicationTest {
     }
 
     @Test
-    public void testParallelizeMatMul() {
+    public void testParallelizeMatMul() throws InterruptedException {
         Assertions.assertEquals(matrix_C, MatrixMultiplication.ParallelizeMatMul(matrix_A, matrix_B));
     }
 }
